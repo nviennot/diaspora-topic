@@ -1,7 +1,9 @@
 class Post < ActiveRecord::Base
-  include Promiscuous::Decorator
+  include Promiscuous::Subscriber
+  # include Promiscuous::Decorator
   subscribe :author_id, :public, :diaspora_handle, :guid, :text, :from => 'diaspora'
-  publish :sentiment, :concepts
+  # publish :sentiment, :concepts
+
 
   belongs_to :author, :class_name => 'Person'
 

@@ -43,7 +43,6 @@ gem 'jquery-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'promiscuous', github: 'nviennot/promiscuous', branch: 'master'
 gem 'pg'
 gem 'haml'
 
@@ -55,3 +54,5 @@ end
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'net-http-persistent'
+
+gem 'promiscuous', github: 'nviennot/promiscuous', branch: 'master'
